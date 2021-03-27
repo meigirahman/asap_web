@@ -1,0 +1,30 @@
+#tablei{
+          border-collapse: collapse;
+          font-family: Arial,Helvetica,sans-serif;
+          font-size: 11px;
+          color:#000000;
+          width: 700px;
+           
+      }
+  /* Class Di bawah Di gunakana Mengatur Lebar Kolom pada Tabel*/  
+     .pendek{
+        width: 40px;
+      }
+      .sedang{
+        width: 100px;
+      }
+      .panjang{
+        width: 200px;
+      }
+    /*mengatur warna latar belakang, jarak antar kolom, dan posisi teks pada Header Tabel*/  
+      #tablei thead th{
+          text-align: left;
+          padding: 5px;
+          background: #999;
+       
+      }
+     
+      #tablei tbody td{
+          border-top: 1px solid #e3e3e3;
+          padding: 5px;
+ }

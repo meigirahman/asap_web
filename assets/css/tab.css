@@ -1,0 +1,14 @@
+.tab{ 
+    font: 7px/7px Verdana, Arial, Helvetica, sans-serif; 
+    border-collapse: collapse; width: 850px;margin:0 0 0 0px ; 
+    } 
+.tab th { 
+    border: 1px solid #000;  
+    text-align: center; background-color:#fff 
+    } 
+.tab td { 
+    border: 1px solid #000; padding: 0px; background-color:#fff; 
+    } 
+h1 { 
+    color:#003300; font:22px "Trebuchet MS"; text-align:center; 
+    }

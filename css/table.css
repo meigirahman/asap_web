@@ -1,0 +1,30 @@
+.table-dewek{
+border-collapse:collapse;
+color:#000;
+}
+.table-dewek tr{
+background:#b6cffc;
+}
+.table-dewek th, .table-dewek td{
+padding:1px 3px;
+border:1px solid #93b6f6;
+}
+.table-dewek tr:nth-child(even){
+background:#b6cffc;
+}
+.table-dewek th{
+background:#1a66f1;
+color:#fff;
+font-weight:bold;
+}
+
+.zoom:hover { 
+background: #b9b3b3;
+-webkit-transform: scale(1);
+-moz-transform: scale(1);
+-o-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1);
+text-align:center;
+
+}

@@ -1,0 +1,127 @@
+body{
+    background: url(../img/k.jpg) no-repeat fixed;    
+    }
+#pagewrap {
+    padding: 5px;
+    width: 960px;
+    margin: 20px auto;
+}
+#header {
+    height: 180px;
+    text-align: center;
+    float: right;
+    width: 300px;
+    font: Bold 20px Comic Sans MS ;
+    color: #f3e113;
+}
+#content {
+    width: 420px;
+    height: 230px;
+    background:rgba(0,0,0, 0.6);
+    border-radius: 15px;
+    position: absolute;
+    left: 30%;
+    margin: 100px auto;
+}
+
+#footer {
+    clear: both;
+    padding: 10px 0;
+    background:transparent;
+    position: fixed;
+    color: #fff;
+    bottom: 260px;
+    left: 37%;
+}
+#footer a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}    
+#marquee{
+    padding: 10px 0;
+    background: -webkit-linear-gradient(left, #ccc, #999);
+    background: -moz-linear-gradient(left, #ccc, #999);
+    background: -o-linear-gradient(left, #ccc, #999);
+    background: -ms-linear-gradient(left, #ccc, #999);
+    background: linear-gradient(left, #ccc, #999);
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    font: 15px Kristen ITC;
+	}
+ #error_messege{
+     border: 0px ;
+     background-color: transparent;
+     width: auto;
+     font: 12px Segoe Print;
+     padding: 5px 5px 5px 5px;
+     text-align: center;
+     color: #fd1212;
+     font-weight: 700;
+}
+
+.btnLogin:hover,
+    .btnLogin:focus,
+    .btnLogin:active{
+        background:#109ad6;
+        background:-moz-linear-gradient(top, #109ad6, #badff3);
+        background:-webkit-gradient(linear, left top, left bottom, from(#109ad6), to(#badff3));
+	   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#109ad6', EndColorStr='#badff3')";
+    }
+    .btnLogin:active{
+        text-shadow:rgba(0,0,0,0.3) 0 -1px 0px; 
+    }
+    .btnLogin{
+        -moz-border-radius:2px;
+        -webkit-border-radius:2px;
+        border-radius:15px;
+        background:#109ad6;
+        background:-moz-linear-gradient(top, #badff3, #109ad6);
+        background:-webkit-gradient(linear, left top, left bottom, from(#badff3), to(#109ad6));
+	   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#badff3', EndColorStr='#109ad6')";
+        border:1px solid #7db0cc !important;
+        cursor: pointer;
+        padding:11px 16px;
+        font:bold 14px/14px Verdana, Tahomma, Geneva;
+        text-shadow:rgba(0,0,0,0.2) 0 1px 0px; 
+        color:#fff;
+        -moz-box-shadow:inset rgba(255,255,255,0.6) 0 1px 1px, rgba(0,0,0,0.1) 0 1px 1px;
+        -webkit-box-shadow:inset rgba(255,255,255,0.6) 0 1px 1px, rgba(0,0,0,0.1) 0 1px 1px;
+        box-shadow:inset rgba(255,255,255,0.6) 0 1px 1px, rgba(0,0,0,0.1) 0 1px 1px;
+        margin-left:12px;
+        float:right;
+	   padding:7px 21px;
+    }
+@media screen and (max-width: 980px) {
+    
+    #pagewrap{
+        width: 94%;
+    }
+    #content {
+        width: 40%;
+    }
+    #footer {
+        width: 30%;
+    }
+}
+ 
+/* Jika berukuran 700px atau kurang*/
+@media screen and (max-width: 700px) {
+ 
+    #content {
+        width: auto;
+        float: none;
+    }
+ 
+}
+ 
+/* Jika berukuran 480px atau kurang*/
+@media screen and (max-width: 480px) {
+ 
+    #header {
+        height: auto;
+    }
+    
+    
+}
