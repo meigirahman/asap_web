@@ -1,6 +1,6 @@
 <?
 
-$myquery="select * from tb_beli where kd_beli='$_GET[kd_beli]' limit 1 ";
+$myquery="select * from tb_saldo where kd_saldo='$_GET[kd_saldo]' limit 1 ";
                                     
                                     
                                     $daftar=mysqli_query($konek,$myquery) or die (mysql_error());
@@ -18,7 +18,7 @@ $myquery="select * from tb_beli where kd_beli='$_GET[kd_beli]' limit 1 ";
  
                             
 							<div class="col-lg-12">
-                              <form role="form" name="tes" method="post" action="home.php?p=beli_update">
+                              <form role="form" name="tes" method="post" action="home.php?p=saldo_update">
 
                                       
                                
@@ -34,7 +34,7 @@ $myquery="select * from tb_beli where kd_beli='$_GET[kd_beli]' limit 1 ";
                                 </div>
 						 
 								
-							 <input class="form-control" type="hidden" required= "" value="<?php echo $dataku->kd_beli?>" name="kd_beli" id="kd_beli"  />
+							 <input class="form-control" type="hidden" required= "" value="<?php echo $dataku->kd_saldo?>" name="kd_saldo" id="kd_saldo"  />
 									
 									<div class="form-group">						
 										<label> Tanggal</label> 

@@ -68,7 +68,9 @@ error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
                                     <a href='?p=sub_saldo&kd_saldo=<?php echo $dataku->kd_saldo?>&tgl=<?php echo $dataku->tgl?>' class='btn btn-warning btn-sm'>
 						<span class='glyphicon glyphicon-edit'>Pilih</span> 
 					  </a>
-					  
+					  <a  href='?p=saldo_edit&kd_saldo=<?php echo $dataku->kd_saldo?>' class='btn btn-info btn-sm'>
+						<span class='glyphicon glyphicon-edit'>EditData</span> 
+					  </a>
 					      <a  onclick="return confirm('Yakin Hapus?')" href='?p=saldo_hapus&kd_saldo=<?php echo $dataku->kd_saldo?>' class='btn btn-danger btn-sm'>
 						<span class='glyphicon glyphicon-edit'>Hapus</span> 
 					  </a>
