@@ -1,17 +1,3 @@
-<?
- 
-include "tanggal.php";
-?>
-
-
-<link rel="shortcut icon" href="img/favicon(1).ico">
-<script type="text/javascript">
-function logout(){
-    if(confirm("Logout ?")){
-        doLogout();
-    }
-}
-</script>
 
 
 <script type="text/javascript" src="assets/js/jquery.js"></script>
@@ -27,18 +13,14 @@ function logout(){
             <div class="row">
                 <div class="col-lg-12">
                     <div class="panel panel-success">
-                        <div class="panel-heading">
-                            <center>Data</center>
-                        </div>
+                        
 						
 						
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                             <div class="table-responsive">
                              
-													  <a  href='home.php?p=rek_input' class='btn btn-primary btn-sm'>
-						<span class='glyphicon glyphicon-edit'></span> Tambahkan Data
-					  </a>
+								 <br>Jika ingin menambahkan barang harap hubungi Administrator<br>
 					  
 								<form name="FLaporan" method="post" action="hapus_banyak_skck.php" onsubmit="return confirm('Hapus data terpilih?')" >
                                     

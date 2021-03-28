@@ -163,7 +163,7 @@
 									</div>
 									
 									<div class="form-group"> 				
-										<label> Tanggal Kadaluarsa</label> 
+										<label> Tanggal Kadaluarsa (Opsional, boleh dikosongkan)</label> 
 										<input class="form-control" type="date"  name="expired" id="expired"  />
 									</div>
 									

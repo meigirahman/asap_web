@@ -21,6 +21,14 @@
 			  <img src="icon/House.png" width=50/><span> Welcome</span>
 			  </a>
 			  </li>
+			  	<li>
+			  <a href="?p=rek_view">
+			  <img src="icon/Add.png" width=50/>
+				<span>Tabel Barang</span>
+				
+			  </a>
+			 
+			</li>
 			  
 			  <li class="treeview">
 			  <a href="#">

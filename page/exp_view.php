@@ -90,14 +90,22 @@ $sisa=floor($diff / (60 * 60 * 24 ))+1;
  
  if($sisa<=0)
  {
- echo "barang sudah kadaluarsa ";
+	 if(date("Y-m-d", strtotime($dataku->expired))=='1970-01-01')
+{
+	echo "tanggal kadaluarsa tidak diisi";
+}
+else
+{ echo "barang sudah kadaluarsa ";
  echo "<img src='d.png' width='25' />";
- }
+}
+}
  else
  {
 	 echo $sisa . ' hari sebelum kadaluarsa';
  }
+
 }
+
 else
 {
 	echo "tanggal kadaluarsa tidak diisi";
