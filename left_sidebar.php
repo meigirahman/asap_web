@@ -18,7 +18,7 @@
 			<li>
 			  <a href="home.php?p=welcome">
 				
-			  <img src="icon/home2.png" width=50/><span> Welcome</span>
+			  <img src="icon/House.png" width=50/><span> Welcome</span>
 			  </a>
 			  </li>
 			  
@@ -57,6 +57,16 @@
 
 			  </ul>
 			</li>
+			<li>
+			  <a href="?p=bukupembantu_filter">
+			  <img src="icon/Copy.png" width=50/>
+				<span>Buku Persediaan</span>
+				
+			  </a>
+			 
+			</li>
+			
+			
 			<li class="treeview">
 			  <a href="#">
 			  <img src="icon/Print.png" width=50/>
@@ -73,6 +83,15 @@
 				  <li><a href="?p=filter_pembelian"><i class="fa fa-paste"></i> Transaksi Pembelian</a></li> 
 
 			  </ul>
+			</li>
+		
+			  			<li>
+			  <a href="?p=exp_view">
+			  <img src="icon/Chart.png" width=50/>
+				<span>Barang Kadaluarsa</span>
+				
+			  </a>
+			 
 			</li>
 			 
  

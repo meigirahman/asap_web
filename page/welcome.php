@@ -1,11 +1,25 @@
 <?
-
-session_start();
-
 if(!isset ($_SESSION['my_session'])){
     header('location:index.php');
 } 
+ 
+$exp="select min(expired) as expired from tb_stok where kd_opd='$_SESSION[kd_opd]' and kd_sub='$_SESSION[kd_sub]'";
+                                    
+$exp1=mysqli_query($konek,$exp) or die (mysqli_error());
+$expp=mysqli_fetch_object($exp1);
+if($expp->expired!=null)
+{
 
+if($expp->expired<=date("Y-m-d") )
+{
+	  echo "
+        <script type='text/javascript'>
+        alert('terdapat barang persediaan yang sudah kadaluarsa');
+        
+        </script>";
+}
+}                                
+							   
 ?>
 
 <script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
@@ -26,6 +40,7 @@ if(!isset ($_SESSION['my_session'])){
         <div class='col-lg-9'>	
 <div class="panel panel-danger">		
 <div class="panel-heading">
+
                             <center>DATA BELANJA ASAP DAN SIMDA</center>
                         </div>									
           <!-- MAP & BOX PANE -->
@@ -55,6 +70,9 @@ if(!isset ($_SESSION['my_session'])){
                                     <?
                                     $myquery="select * from tb_opd where kd_sub='0' ";
                                     $no=1;
+									$belanja=0;
+									$belanjasimda=0;
+									$nilaitot=0;
                                     mysqli_query($konek,"truncate table rekap")or die (mysqli_error());
                                     $daftar=mysqli_query($konek,$myquery) or die (mysqli_error());
                                     while($dataku=mysqli_fetch_object($daftar))

@@ -1,5 +1,7 @@
 <?
 include "koneksi.php";
+
+include 'tgl_indo.php';
 		session_start();
 		if(isset($_SESSION["kd_opd"])){ // jika ada sesi
 			
