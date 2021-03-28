@@ -30,6 +30,7 @@
 		$jumlah=$_POST['jumlah'];  
 		$satuan=$_POST['satuan'];  
 		$harga_satuan=$_POST['harga_satuan'];  
+		$expired=$_POST['expired'];  
 			 
 		$kd_opd=$_POST['kd_opd']; 
 		$kd_sub=$_POST['kd_sub']; 
@@ -70,15 +71,15 @@
 		}
 		else
 		{
-			mysqli_query($konek,"insert into tb_beli_rinci(kd_beli_rinci,kd_brg,uraian,jumlah,satuan,harga_satuan,kd_opd,kd_sub,kd_beli,tgl)
+			mysqli_query($konek,"insert into tb_beli_rinci(kd_beli_rinci,kd_brg,uraian,jumlah,satuan,harga_satuan,kd_opd,kd_sub,kd_beli,tgl,expired)
 			 
-			values ('$kd_beli_rinci','$kd_brg','$uraian','$jumlah','$satuan',$harga_satuan,'$kd_opd','$kd_sub','$kd_beli','$tgl')") or die(mysql_error());
+			values ('$kd_beli_rinci','$kd_brg','$uraian','$jumlah','$satuan',$harga_satuan,'$kd_opd','$kd_sub','$kd_beli','$tgl','$expired')") or die(mysql_error());
 			
 			 
 	 
-			mysqli_query($konek,"insert into tb_stok(kd_stok,kd_brg,tgl,uraian,jumlah,satuan,harga_satuan,kd_opd,kd_sub,kd_beli,kd_beli_rinci,opsi,rek4,positif)
+			mysqli_query($konek,"insert into tb_stok(kd_stok,kd_brg,tgl,uraian,jumlah,satuan,harga_satuan,kd_opd,kd_sub,kd_beli,kd_beli_rinci,opsi,rek4,positif,expired)
 			 
-			values ('$kd_stok','$kd_brg','$tgl','$uraian','$jumlah','$satuan',$harga_satuan,'$kd_opd','$kd_sub','$kd_beli','$kd_beli_rinci','masuk','$rek4','$jumlah')") or die(mysql_error());
+			values ('$kd_stok','$kd_brg','$tgl','$uraian','$jumlah','$satuan',$harga_satuan,'$kd_opd','$kd_sub','$kd_beli','$kd_beli_rinci','masuk','$rek4','$jumlah','$expired')") or die(mysql_error());
 			
 		?>
 		<script type="text/javascript">

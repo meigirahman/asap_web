@@ -162,6 +162,11 @@
 										<input class="form-control" type="text" required= "" name="harga_satuan" id="harga_satuan"  />
 									</div>
 									
+									<div class="form-group"> 				
+										<label> Tanggal Kadaluarsa</label> 
+										<input class="form-control" type="date"  name="expired" id="expired"  />
+									</div>
+									
 								 
                                   <div align="center"> 
                                     <input name="fok" type="submit" id="fok" value="Simpan" class="btn btn-primary">
