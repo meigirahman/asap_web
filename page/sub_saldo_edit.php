@@ -110,7 +110,7 @@ $myquery="select * from tb_saldo_rinci where kd_saldo_rinci='$_GET[kd_saldo_rinc
                                   <div align="center"> 
                                     <input name="fok" type="submit" id="fok" value="Simpan" class="btn btn-primary">
                                     <input name="fulang" type="reset" id="fulang" value="Reset" class="btn btn-default">
-                                    <input name="fulang2" type="button" id="fulang2" value="Kembali" onclick="javascript:location.href='?p=beli'" class="btn btn-warning">
+                                    <input name="fulang2" type="button" id="fulang2" value="Kembali" onclick="javascript:location.href='?p=saldo'" class="btn btn-warning">
                                   </div>
                         
 								 
