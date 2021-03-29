@@ -31,7 +31,7 @@ error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
 								<form name="FLaporan" method="post" action="hapus_banyak_skck.php" onsubmit="return confirm('Hapus data terpilih?')" >
                                     
                                     <table class="table table-striped table-bordered table-hover" id="dataTables-example" >
-                                    <thead>
+                                   
 									<tr  style="background: #f16721;color: #fff;"> 
 									<th align="center">No</th>
 									<th align="center">Tanggal</th>
@@ -41,7 +41,7 @@ error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
 									
 									<th>Aksi</th>
 									</tr>
-									</thead>
+									 
                                     <?
                                     $myquery="select * from tb_saldo where kd_opd='$_SESSION[kd_opd]' and kd_sub='$_SESSION[kd_sub]' order by tgl asc ";
                                     $no=1;
@@ -61,7 +61,7 @@ error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
 									?>
                                 
  
-		  <td style="text-align:right"><? echo number_format($jlh->total,2,',','.')."</td>"?>
+		  <td style="text-align:right"><? echo number_format($tot=$jlh->total,2,',','.')."</td>"?>
  
  
 									<td align="center">
@@ -81,12 +81,17 @@ error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
                                     </tr>
                                     
                                     <?php
+									$total=$total+$tot;
                                     $no++;
                                     }
+									
                                     ?>
-                                    <tbody>
-                                    
-                                    </tbody>
+                                    <tr  style="background: #f16721;color: #fff;"> 
+									<td colspan=3 style="text-align:right"></td>
+									<td style="text-align:right">
+									<? echo number_format($total,2,',','.')."</td>"?>
+									<td></td>
+									</tr>
                                 </table>
                             </form>
                                     

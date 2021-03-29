@@ -61,7 +61,7 @@ error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
 										?>
                                 
  
-									<td style="text-align:right"><? echo number_format($jlh->total,2,',','.')."</td>"?>
+									<td style="text-align:right"><? echo number_format($tot=$jlh->total,2,',','.')."</td>"?>
  
  
 									<td align="center">
@@ -81,11 +81,17 @@ error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
                                     </tr>
                                     
                                     <?php
+									$total=$total+$tot;
                                     $no++;
                                     }
                                     ?>
                                     <tbody>
-                                    
+                                     <tr  style="background: #f16721;color: #fff;"> 
+									<td colspan=3 style="text-align:right"></td>
+									<td style="text-align:right">
+									<? echo number_format($total,2,',','.')."</td>"?>
+									<td></td>
+									</tr>
                                     </tbody>
                                 </table>
                             </form>
