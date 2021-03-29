@@ -28,7 +28,7 @@ function logout(){
                 <div class="col-lg-12">
                     <div class="panel panel-success">
                         <div class="panel-heading">
-                            <center>Data</center>
+                            <center>BUKU PERSEDIAAN</center>
                         </div>
 						
 						
@@ -45,8 +45,7 @@ function logout(){
 									<tr  style="background: #276e95;color: #fff;"> 
 									<th align="center">No</th> 
 									  
-									<th align="center">Tgl</th> 
-									<th align="center">Nota</th>   
+									<th align="center">Tgl</th>    
 									<th align="center">Masuk</th>
 									<th align="center">Keluar</th>
 									<th align="center">Harga Beli</th>
@@ -66,8 +65,7 @@ function logout(){
                                     ?>
                                     <tr>
                                    <td align="center"><?php echo $no;?></td> 
-                                    <td align="center"><?php echo $dataku->tgl?></td>
-                                    <td align="center"><?php echo $dataku->kd_stok?></td>
+                                    <td align="center"><?php echo $dataku->tgl?></td> 
                                     <td align="center"><?php if($dataku->jumlah>0)
 									{
 									echo $masuk=$dataku->jumlah;

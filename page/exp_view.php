@@ -28,7 +28,7 @@ function logout(){
                 <div class="col-lg-12">
                     <div class="panel panel-success">
                         <div class="panel-heading">
-                            <center>Data</center>
+                           Data hanya tampil jika tanggal kadaluarsa saat pembelian diisi
                         </div>
 						
 						
@@ -36,9 +36,7 @@ function logout(){
                         <div class="panel-body">
                             <div class="table-responsive">
                              
-													  <a  href='home.php?p=rek_input' class='btn btn-primary btn-sm'>
-						<span class='glyphicon glyphicon-edit'></span> Tambahkan Data
-					  </a>
+													   
 					  
 								<form name="FLaporan" method="post" action="hapus_banyak_skck.php" onsubmit="return confirm('Hapus data terpilih?')" >
                                     
@@ -53,11 +51,11 @@ function logout(){
 									<th align="center">Tanggal Kadaluarsa</th>
 									<th align="center">Sisa hari</th>
 									
-									<th>Aksi</th>
+									 
 									</tr>
 									</thead>
                                     <?
-                                    $myquery="select * from tb_stok where kd_opd='$_SESSION[kd_opd]' and kd_sub='$_SESSION[kd_sub]'";
+                                    $myquery="select * from tb_stok where kd_opd='$_SESSION[kd_opd]' and kd_sub='$_SESSION[kd_sub]' and (expired!=null or expired!='0000-00-00')";
                                     $no=1;
                                     
                                     $daftar=mysqli_query($konek,$myquery) or die (mysql_error());
@@ -115,12 +113,7 @@ else
  
  
  </td>
-									<td align="center">
-                                    
-									<a href="home.php?p=pajak_restoran_edit&no_surat=<?php echo $dataku->no_surat?>" title="Edit" style="color: #1484CE;" ><i class="fa fa-edit"></i></a>
-                                    <a href="home.php?p=pajak_restoran_hapus&no_surat=<?php echo $dataku->no_surat?>" title="Hapus" style="color: #1484CE;" onclick="return confirm('Hapus data terpilih?')"><i class="fa fa-trash-o"></i></a>
-                                    
-                                    </td>
+								 
                                     </tr>
                                     
                                     <?php

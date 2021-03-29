@@ -6,12 +6,13 @@ $satuan=$_POST['satuan'];
 $harga_satuan=$_POST['harga_satuan'];  
 $kd_beli= $_POST['kd_beli'];
 $tgl= $_POST['tgl']; 
+$expired= $_POST['expired']; 
 
 
-$myquery = "update tb_beli_rinci set jumlah='$jumlah', satuan='$satuan', harga_satuan='$harga_satuan' where kd_beli_rinci ='$kd_beli_rinci'";
+$myquery = "update tb_beli_rinci set jumlah='$jumlah', satuan='$satuan', harga_satuan='$harga_satuan', expired='$expired' where kd_beli_rinci ='$kd_beli_rinci'";
 mysqli_query($konek,$myquery) or die ("gagal update1");
 
-$myquery = "update tb_stok set jumlah='$jumlah', satuan='$satuan', harga_satuan='$harga_satuan', positif='$jumlah' where kd_beli_rinci='$kd_beli_rinci'";
+$myquery = "update tb_stok set jumlah='$jumlah', satuan='$satuan', harga_satuan='$harga_satuan', positif='$jumlah', expired='$expired' where kd_beli_rinci='$kd_beli_rinci'";
 mysqli_query($konek,$myquery) or die ("gagal update2");
  
 echo "
